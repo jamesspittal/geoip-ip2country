@@ -1,0 +1,29 @@
+geoip-ip2country
+
+EXPLANATION
+ ``ip2country'' runs through the GeoIPCountry.csv (very fast) and returns the country full name based on the IP address provided.
+
+ It's useful for open source projects where you want to easily and accurately work out the client's country based on IP Address without having to have a commercial paid license for GeoIP.
+
+ It is arguably better than using a language such as PHP because the CSV file is very large and this allows for quick look up from the database file.
+
+INSTALL
+ gcc ip2country.c -o ip2country
+
+USAGE
+ ./ip2country <IP ADDRESS>
+
+EXAMPLE
+ $ ./ip2country 4.2.2.2
+ $ United States
+
+EXAMPLE - PHP
+ <?php
+  $country = system("./ip2country 4.2.2.2");
+  echo("$country");
+ ?>
+
+REQUIREMENTS
+ ``ip2country'' must be run in the same folder as GeoIPCountry.csv.
+
+ This databse can be downloaded from the GeoIP database.
