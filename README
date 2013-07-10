@@ -7,6 +7,8 @@ EXPLANATION
 
  It is arguably better than using a language such as PHP because the CSV file is very large and this allows for quick look up from the database file.
 
+ The other benefit of this approach is that it doesn't make a WHOIS lookup or have to do any DNS calls.
+
 INSTALL
  gcc ip2country.c -o ip2country
 
