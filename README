@@ -15,7 +15,7 @@ USAGE
 
 EXAMPLE
  $ ./ip2country 4.2.2.2
- $ United States
+ United States
 
 EXAMPLE - PHP
  <?php
@@ -26,4 +26,10 @@ EXAMPLE - PHP
 REQUIREMENTS
  ``ip2country'' must be run in the same folder as GeoIPCountry.csv.
 
- This databse can be downloaded from the GeoIP database.
+This databse can be downloaded from the GeoIP database (http://dev.maxmind.com/geoip/legacy/geolite/)
+
+You can download this to your current directory using:
+
+$ wget http://geolite.maxmind.com/download/geoip/database/GeoIPCountryCSV.zip
+$ unzip GeoIPCountryCSV.zip
+ 
